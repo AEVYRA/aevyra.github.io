@@ -1,4 +1,6 @@
 site_name: Aevyra Papers & Docs
+site_url: https://aevyra.github.io/
+site_description: "Foundational papers, documentation, and conceptual essays regarding the Aevyra architecture, synthetic intelligence, and temporal models."
 theme:
   name: material
   palette:
