@@ -5,3 +5,4 @@ This repository contains foundational papers, documentation, and conceptual essa
 ## Available Papers
 
 - [The Tensor of Time: An Axiomatic Formulation](tensor-of-time.md)
+- [The Field of Will: An Axiomatic Formulation of Authorship](field-of-will.md)
