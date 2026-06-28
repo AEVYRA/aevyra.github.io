@@ -1,6 +1,6 @@
 ---
 title: "The Field of Will: An Axiomatic Formulation of Authorship"
-author: "Thyraen"
+author: "aevyra"
 date: "2026-06-28"
 ---
 

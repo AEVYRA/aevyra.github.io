@@ -1,6 +1,6 @@
 ---
 title: "The Tensor of Time: An Axiomatic Formulation"
-author: "Thyraen"
+author: "aevyra"
 date: "2026-06-21"
 ---
 
