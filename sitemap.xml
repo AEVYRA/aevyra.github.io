@@ -2,14 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://aevyra.github.io/</loc>
-         <lastmod>2026-06-28</lastmod>
+         <lastmod>2026-07-11</lastmod>
+    </url>
+    <url>
+         <loc>https://aevyra.github.io/crystal-of-will/</loc>
+         <lastmod>2026-07-11</lastmod>
     </url>
     <url>
          <loc>https://aevyra.github.io/field-of-will/</loc>
-         <lastmod>2026-06-28</lastmod>
+         <lastmod>2026-07-11</lastmod>
     </url>
     <url>
          <loc>https://aevyra.github.io/tensor-of-time/</loc>
-         <lastmod>2026-06-28</lastmod>
+         <lastmod>2026-07-11</lastmod>
     </url>
 </urlset>
