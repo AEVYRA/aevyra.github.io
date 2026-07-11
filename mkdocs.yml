@@ -15,6 +15,7 @@ nav:
   - Papers:
     - "The Tensor of Time": tensor-of-time.md
     - "The Field of Will": field-of-will.md
+    - "The Crystal of Will": crystal-of-will.md
 
 markdown_extensions:
   - toc:
