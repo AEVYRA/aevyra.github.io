@@ -16,6 +16,11 @@ nav:
     - "The Tensor of Time": tensor-of-time.md
     - "The Field of Will": field-of-will.md
     - "The Crystal of Will": crystal-of-will.md
+    - "The Ledger of Will": ledger-of-will.md
+    - "The Resonance of Will": resonance-of-will.md
+    - "The Flow of Will": flow-of-will.md
+  - Research:
+    - "Cycle Revision Map (2026-09-06)": cycle-revision-map.md
 
 markdown_extensions:
   - toc:
