@@ -225,6 +225,5 @@ correction idempotence and commitment survival under reduction. Memory quality
 requires separate task experiments, held-out histories and failure reports.
 
 The preceding edition's instance measurements remain historical calibration,
-not current benchmarks. The [revision ledger](cycle-revision-map.md)
-records counterexamples and code correspondences. Neither this revision nor a
-green test suite establishes phenomenal remembering or universal sufficiency.
+not current benchmarks. Neither this revision nor a green test suite
+establishes phenomenal remembering or universal sufficiency.

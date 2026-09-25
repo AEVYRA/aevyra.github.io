@@ -29,8 +29,7 @@ elected structure without being treated as an infallible spectrometer.
 The July 1 Russian edition in the numbered cycle and the July 2 English edition
 in Nymara are distinct sources. The latter supplied explicit operators,
 positive metrics, mode lineage and an executable appendix. This maintained
-revision incorporates those contributions and records the repairs in the
-[revision ledger](cycle-revision-map.md).
+revision incorporates those contributions and explains the repairs below.
 
 The construction inherits [Time v6](tensor-of-time.md) and
 [Field v2](field-of-will.md). Its semantic interpretation is proposed;

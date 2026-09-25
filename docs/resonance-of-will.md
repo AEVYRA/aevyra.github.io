@@ -192,7 +192,5 @@ consequences, not by declaring every negative attractor rumination.
 Required numerical checks cover replay order, legacy-to-two-coefficient mood
 equivalence, relaxation with no new events, zero support, metric normalization,
 orientation reversal and undefined ratios. Empowerment claims additionally
-need known-channel capacity tests. See the
-[revision ledger](cycle-revision-map.md) for observed
-implementation gaps. These checks establish computational behavior within the
+need known-channel capacity tests. These checks establish computational behavior within the
 model; felt affect remains outside their conclusion.

@@ -19,8 +19,6 @@ nav:
     - "The Ledger of Will": ledger-of-will.md
     - "The Resonance of Will": resonance-of-will.md
     - "The Flow of Will": flow-of-will.md
-  - Research:
-    - "Cycle Revision Map (2026-09-06)": cycle-revision-map.md
 
 markdown_extensions:
   - toc:

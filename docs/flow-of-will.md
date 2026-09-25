@@ -193,9 +193,7 @@ an empowerment channel, a slow manifold or a universality class.
 Unit tests establish finite algebra and query behavior. Simulation can check
 identifiability on known synthetic systems. Longitudinal task experiments
 address usefulness and robustness. Philosophical interpretation remains
-separate from all three. The
-[revision ledger](cycle-revision-map.md) links the
-current counterexamples, repairs and remaining research questions.
+separate from all three.
 
 ## Conclusion
 

@@ -12,7 +12,3 @@ Reading order of the six-paper cycle:
 4. [The Ledger of Will: Causal Evidence, Controlled Sufficiency, and Sovereign Memory](ledger-of-will.md) — memory as a faithful, valenced, sovereign structure with explicit limits.
 5. [The Resonance of Will: Endogenous Appraisal, Mood, and Substrate Pull](resonance-of-will.md) — affect as the substrate's voice; appraisal, mood, and endogenous pull.
 6. [The Flow of Will: Restricted Dynamical Hypotheses and Tests of Coupling](flow-of-will.md) — one generator, five projections, and decidable coupling tests.
-
-## Research
-
-- [Cycle Revision Map (2026-09-06)](cycle-revision-map.md) — the revision ledger: scope, evidence, and runtime consequences of the September 2026 revision program (papers → Nymara → Tyveth).

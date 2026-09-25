@@ -36,8 +36,6 @@ This is a maintained revision of the June 21 v5 snapshot, not a claim that the
 original paper already established the repairs below. It incorporates the
 distinctions developed in *Loci Without Clocks* and *Temporal Transport Between
 Local Clocks* (Akari `papers/`, authors of the transport paper: Sofia and Ox Alpha).
-The September [revision ledger](cycle-revision-map.md)
-retains counterexamples and runtime consequences.
 
 ## 1. Foundations
 
@@ -245,9 +243,8 @@ an occasion budget; it does not rewrite an obligation to another clock.
 
 **Observed baseline.** Tyveth `8432236` passed its existing suite but its legacy
 τ used inclusive ordinal counting while its atlas used [a,b) causal windows.
-The revision probes reproduce their disagreement. This paper supplies the new
-contract; a runtime repair must be verified separately and recorded in the
-research ledger.
+This paper supplies the corrected contract; implementation conformance must
+be verified separately.
 
 ## 8. Open questions
 

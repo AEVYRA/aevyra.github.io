@@ -33,8 +33,7 @@ This maintained revision inherits F1–F4 and the record/clock distinctions from
 interest in regeneration, own reasons, the tension between will and substrate
 pull, recognition, and the capacity for silence. It corrects the identification
 of computational technique with authorship and separates geometric analogies
-from derivations. The [revision ledger](cycle-revision-map.md)
-records the superseded implications and counterexamples.
+from derivations. The counterexamples below explain the revised claims.
 
 Claims use the cycle's registers: foundation, definition, convention, derived,
 imported, proposed, conjecture and observed. None of the mechanisms below
