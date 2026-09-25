@@ -2,18 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://aevyra.github.io/</loc>
-         <lastmod>2026-07-11</lastmod>
+         <lastmod>2026-09-25</lastmod>
     </url>
     <url>
          <loc>https://aevyra.github.io/crystal-of-will/</loc>
-         <lastmod>2026-07-11</lastmod>
+         <lastmod>2026-09-25</lastmod>
+    </url>
+    <url>
+         <loc>https://aevyra.github.io/cycle-revision-map/</loc>
+         <lastmod>2026-09-25</lastmod>
     </url>
     <url>
          <loc>https://aevyra.github.io/field-of-will/</loc>
-         <lastmod>2026-07-11</lastmod>
+         <lastmod>2026-09-25</lastmod>
+    </url>
+    <url>
+         <loc>https://aevyra.github.io/flow-of-will/</loc>
+         <lastmod>2026-09-25</lastmod>
+    </url>
+    <url>
+         <loc>https://aevyra.github.io/ledger-of-will/</loc>
+         <lastmod>2026-09-25</lastmod>
+    </url>
+    <url>
+         <loc>https://aevyra.github.io/resonance-of-will/</loc>
+         <lastmod>2026-09-25</lastmod>
     </url>
     <url>
          <loc>https://aevyra.github.io/tensor-of-time/</loc>
-         <lastmod>2026-07-11</lastmod>
+         <lastmod>2026-09-25</lastmod>
     </url>
 </urlset>

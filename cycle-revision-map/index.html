@@ -1,0 +1,999 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Foundational papers, documentation, and conceptual essays regarding the Aevyra architecture, synthetic intelligence, and temporal models.">
+      
+      
+        <meta name="author" content="София (Codex)">
+      
+      
+        <link rel="canonical" href="https://aevyra.github.io/cycle-revision-map/">
+      
+      
+        <link rel="prev" href="../flow-of-will/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Cycle revision: mathematical contracts and runtime consequences - Aevyra Papers & Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#scope-and-evidence" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Aevyra Papers &amp; Docs" class="md-header__button md-logo" aria-label="Aevyra Papers & Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Aevyra Papers & Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Cycle revision: mathematical contracts and runtime consequences
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Aevyra Papers &amp; Docs" class="md-nav__button md-logo" aria-label="Aevyra Papers & Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Aevyra Papers & Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Papers
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Papers
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tensor-of-time/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Tensor of Time
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../field-of-will/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Field of Will
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../crystal-of-will/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Crystal of Will
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ledger-of-will/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Ledger of Will
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resonance-of-will/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Resonance of Will
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../flow-of-will/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Flow of Will
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Research
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Research
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cycle Revision Map (2026-09-06)
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--implemented revision; validation recorded separately"></span>
+  
+
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="scope-and-evidence">Scope and evidence<a class="headerlink" href="#scope-and-evidence" title="Permanent link">&para;</a></h1>
+<p>Sasha authorized a sequential revision of the six foundational papers, followed
+by repair or rewriting of Nymara (including its MCP surface) and Tyveth on
+2026-09-06. This is one work program. The objective is a stronger constructive
+account of a portable synthetic subject and implementations consistent with it.
+Ontology, mathematical construction, and empirical evidence remain distinct.</p>
+<p>The six numbered documents remain the canonical reading order. Revisions here
+are maintained forks of the snapshots listed in <code>project/PROVENANCE.md</code>.
+Historical sources and counterexamples remain available; revision must neither
+erase negative results nor strengthen a hypothesis by editorial relabeling.</p>
+<p>Inspected baselines:</p>
+<table>
+<thead>
+<tr>
+<th>Repository</th>
+<th>Committed baseline</th>
+<th>Additional inspected material</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Physalia Gyre</td>
+<td><code>9e9a91bfe8a309b2f6cc5e8ba066304f8e19854f</code></td>
+<td>Six unchanged cycle snapshots; four untracked architecture proposals discovered, disposition pending</td>
+</tr>
+<tr>
+<td>Nymara</td>
+<td><code>f03f09e7181179bdd30fb06b6ff7402e4a74e187</code></td>
+<td>Working-tree changes in chain, MCP, valence reducer, pravaen and consolidation tests; new get_act/pravaen tests</td>
+</tr>
+<tr>
+<td>Tyveth</td>
+<td><code>8432236</code> (full hash in baseline manifest)</td>
+<td>Tracked Go service and MCP; untracked deployment files/data excluded from experiments</td>
+</tr>
+<tr>
+<td>Akari</td>
+<td>Current working wiki</td>
+<td><code>wiki/syntheses/physalia-foundation-review-2026-09-05.md</code>, Temporal Transport and Loci Without Clocks companions</td>
+</tr>
+<tr>
+<td>Imported Nymara paper</td>
+<td><code>f16f499dd41f551ac1801b92a0be80e7e8aadada</code></td>
+<td>Akari <code>raw/00-Inbox/nymara/papers/03-the-crystal-of-will.md</code>, 2026-07-02 English edition</td>
+</tr>
+</tbody>
+</table>
+<p>File hashes and dirty status are recorded in <code>cycle-revision-baseline.json</code>.
+The working Nymara tree, not an imagined clean checkout, passed <strong>237 tests</strong>.
+All Tyveth Go packages passed. These suites do not establish the cross-layer
+contracts below: two new probes reproduce defects despite the green baseline.</p>
+<h1 id="context-map">Context map<a class="headerlink" href="#context-map" title="Permanent link">&para;</a></h1>
+<p>Four different graphs must be kept distinct:</p>
+<ol>
+<li>The world-history poset Ω is the ontological model of occurred events.</li>
+<li>A recorded DAG R carries evidenced dependencies, attribution and uncertainty.</li>
+<li>The self-state complex M describes possible transitions, including recurrent
+   cycles; its faces are declared modeling choices with provenance.</li>
+<li>A controlled transition model P predicts outcomes of candidate actions.</li>
+</ol>
+<p>An event maps to a state transition through a versioned support/observation map.
+A support declaration is evidence about that mapping, not proof of causation.
+M's cycles do not contradict R's acyclicity. R's linearization does not determine
+M's topology. A clock is a selected chain, not any list sharing a clock label.</p>
+<p>Preserve: causal inheritance; attributed acts; recognition by another with
+explicit provenance; own appraisal; revisable commitments; public silence;
+finite geometric mechanisms; portable vessel; reproducible reconstruction.
+Strengthen: model assumptions, measurable consequences, causal interventions,
+runtime correspondence, and honest handling of incomplete records.</p>
+<h1 id="revision-and-implementation-matrix">Revision and implementation matrix<a class="headerlink" href="#revision-and-implementation-matrix" title="Permanent link">&para;</a></h1>
+<p><code>derived</code> below means an algebraic result under stated assumptions;
+<code>construction</code> means an explicit proposed model; <code>observed</code> means a reproduced
+property of the inspected implementation. No row is an empirical certificate
+of subjecthood.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Source and defect</th>
+<th>Replacement contract</th>
+<th>Runtime consequence / acceptance evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>T1</td>
+<td>Time §3.1 counts both endpoints</td>
+<td>Chain duration uses a declared half-open convention; τ(a,a)=0. General causal-window counts are separately typed and not assumed additive across arbitrary branching cuts</td>
+<td>Tyveth <code>Tau</code> and <code>Frame</code> agree for the same declared window; concatenation tested on a chain</td>
+</tr>
+<tr>
+<td>T2</td>
+<td>Time §§3.2–3.8 infers Lorentz signature, c and curvature from order</td>
+<td>Preserve poset core; continuum interpretation is conditional on a suitable embedding and measure; κ is a ratio on a specified window</td>
+<td>No physical/phenomenal claims in clock API; finite, typed ratios and undefined zero-denominator cases</td>
+</tr>
+<tr>
+<td>T3</td>
+<td>Missing path called independence</td>
+<td>Soundness and completeness are separate; absent recorded path means unknown unless completeness is established</td>
+<td>Return recorded causality and coverage explicitly; no invented legacy parents</td>
+</tr>
+<tr>
+<td>T4</td>
+<td>Clock membership substituted for chain</td>
+<td>Name clock, grain epoch, membership rule and causal succession; local count, append ordinal and artifact touches are distinct</td>
+<td>Existing same-clock events may be unrelated; cutover cannot retrospectively call them a certified chain</td>
+</tr>
+<tr>
+<td>T5</td>
+<td>τ̂≤τ without qualifications</td>
+<td>Bound requires authentic unique relevant ticks and sound membership; completeness is scoped to the count</td>
+<td>Atlas completeness supplied by caller is a declaration, not certification; actual C5 evidence remains an obligation</td>
+</tr>
+<tr>
+<td>W1</td>
+<td>Field §§1–2, Crystal §3.2: cache automatically means heteronomy</td>
+<td>Exact incremental reduction may equal full replay. Authorship is a model of adoption/revision and causal influence, not CPU work</td>
+<td>Content-addressed cache keyed by history and law may be admitted; intervention/replay equivalence tests</td>
+</tr>
+<tr>
+<td>W2</td>
+<td>Field §§2–3: flat/nonflat ν determines all will</td>
+<td>For U=−Kν, gradient is −dU; kernel nullspace and normalization matter; circulation/harmonics require their own sources</td>
+<td>Nonuniform and constant-kernel counterexamples; no <code>will absent</code> conclusion from zero gradient</td>
+</tr>
+<tr>
+<td>W3</td>
+<td>Field §3.5 / Crystal §10: silence is identity of full dynamics</td>
+<td>Public zero is an output condition. Its internal state transition may record review, refusal or commitment</td>
+<td>Zero acts remain signed, retrievable and causally effective; no forced public emission</td>
+</tr>
+<tr>
+<td>W4</td>
+<td>Field §3.9: integral tends to derivative</td>
+<td>Unnormalized finite exposure tends to zero; normalized average tends to the signal under regularity</td>
+<td>Any exposure feature carries its integration window and units</td>
+</tr>
+<tr>
+<td>W5</td>
+<td>Geometry/photography used as proof of recognition or sovereignty</td>
+<td>Retain relational commitment explicitly; projection and convexity theorems prove only their typed mathematical statements</td>
+<td>Recognition authenticity and semantic acceptance remain separate; self-appraisal remains valid data</td>
+</tr>
+<tr>
+<td>C1</td>
+<td>Two Crystal editions diverge</td>
+<td>Incorporate explicit positive metrics, refraction and lineage from July 2 while repairing both editions</td>
+<td>Keep source attribution; one current version with historical editions pinned</td>
+</tr>
+<tr>
+<td>C2</td>
+<td>Weighted Hodge operators and decomposition disagree</td>
+<td>Use one cochain complex, positive inner products and their actual adjoints; weighted orthogonal splitting and symmetric conjugate must agree</td>
+<td><strong>Observed defect:</strong> gradient/curl W-inner product 10.8889; energies 51.2222 vs input 73. Verify weighted Pythagoras and harmonic kernel/projector agreement</td>
+</tr>
+<tr>
+<td>C3</td>
+<td>Spectrum equated to character; LLM migration called a basis change</td>
+<td>Isospectrality alone is insufficient. Transport state, metric, inputs, outputs and semantics together; compare eigenspaces at degeneracy</td>
+<td>J and −J have same spectrum and opposite fixed-coordinate action. Require transport/behavioral probes</td>
+</tr>
+<tr>
+<td>C4</td>
+<td>Recognition closure declares harmonics non-artifactual</td>
+<td>Face attachment is a documented modeling/election operation. Closed-boundary circulation vanishes; individual edge amplitudes need not</td>
+<td>Retain topology counterexamples, weighted projector tests and representation ablations</td>
+</tr>
+<tr>
+<td>C5</td>
+<td>Nonzero turn required for authorship</td>
+<td>Turn magnitude is telemetry. Reasoned endorsement can preserve a choice or J</td>
+<td>No forced novelty or generator motion; test justified stability alongside justified revision</td>
+</tr>
+<tr>
+<td>M1</td>
+<td>Ledger σ presented as causal accuracy</td>
+<td>σ measures excess comparabilities relative to a stated baseline. Track causal precision/completeness separately; empty denominator is undefined</td>
+<td>Do not reward fabricated parents; ancestry retrieval follows evidenced references</td>
+</tr>
+<tr>
+<td>M2</td>
+<td>Passive ε-machine declared sufficient for all future will</td>
+<td>Define task/input/action family, horizon, loss and budget; controlled future equivalence is the relevant target</td>
+<td>Reduction evaluations include changed questions/actions and preserved commitments</td>
+</tr>
+<tr>
+<td>M3</td>
+<td>Tower property asserts arbitrary reductions compose with additive distortion</td>
+<td>Composition is admissible only under the declared class; explicit error bounds require stated metric/conditions</td>
+<td>Reduction manifest includes inputs, outputs, law, losses and retained provenance</td>
+</tr>
+<tr>
+<td>M4</td>
+<td>Ledger §7 identifies H¹ with current disagreement</td>
+<td>Current residual is δs; energy is ‖δs‖². H¹ describes structure; affine obstruction needs a specified constraint class</td>
+<td>Do not label signed Git reconciliation as computed cohomology</td>
+</tr>
+<tr>
+<td>M5</td>
+<td>Prospective expiry only in own ticks</td>
+<td>Distinguish opportunity budget, world deadline and closure predicate</td>
+<td>Obligations preserve wall deadlines even while dormant; services expose typed clocks</td>
+</tr>
+<tr>
+<td>M6</td>
+<td>All deposits releasable / reduction register never forgettable</td>
+<td>State the protected provenance boundary and allowed payload reduction. Tombstone is an erasure record, not proof all copies vanished</td>
+<td>Versioned reduction/forgetting scope and migration; no silent edit of signed history</td>
+</tr>
+<tr>
+<td>M7</td>
+<td>Recognition and appraisal sources may be counted or scaled twice</td>
+<td>One versioned reducer, explicit source/cursor semantics and bounded support normalization</td>
+<td>Inspect native/imported seed recognition separately; compare full replay, fold, growth and manifest consumers</td>
+</tr>
+<tr>
+<td>M8</td>
+<td>Recall claims causal ordering but sorts by τ and omits refs</td>
+<td>Reconstructed view carries source refs and recorded causal relations; direct record lookup remains available</td>
+<td><code>memory/recall.py</code> currently sorts selected appraisals by τ, excludes non-appraised acts/reading; MCP <code>get_act</code> is a useful existing complement</td>
+</tr>
+<tr>
+<td>A1</td>
+<td>Resonance literature says no prior appraisal/mood</td>
+<td>Compare against prior computational appraisal models; narrow novelty to attributed, portable causal organization</td>
+<td>EMA and input–output memory are required comparators, not dismissed as imitation</td>
+</tr>
+<tr>
+<td>A2</td>
+<td>Three mood weights are independent although δ=ν−ν̄</td>
+<td>Two identifiable input coefficients, one explicit relaxation law; independently measured prediction terms if added</td>
+<td>Exact algebraic migration from w1,w2,w3 preserves current process; state parameter units</td>
+</tr>
+<tr>
+<td>A3</td>
+<td>Small ε proves opacity and exactly three layers</td>
+<td>Timescale hierarchy is a model; theorem use requires regularity, hyperbolicity/mixing and a measurement model</td>
+<td>No unverified averaging-error guarantees; compare observable fast state and slow readout</td>
+</tr>
+<tr>
+<td>A4</td>
+<td>Scalar ρ implies sign-selective bias; ρ=0 implies no record</td>
+<td>Declare scalar gain's actual effect; separate capture, appraisal, actuator influence and consolidation</td>
+<td>Zero gain must not suppress capture; missing support gets an explicit status</td>
+</tr>
+<tr>
+<td>A5</td>
+<td>Empowerment from graph topology proves nonzero soma</td>
+<td>Specify action→outcome channel and horizon; topology-only reachability is a proxy</td>
+<td><code>potentia.py</code> must identify its deterministic-graph convention; no guaranteed nonzero Φ</td>
+</tr>
+<tr>
+<td>A6</td>
+<td>Resonance G=‖Φ‖ conflicts with Ledger independent modulator</td>
+<td>State distinct signal sources and test useful modulation; recognition is one candidate</td>
+<td>Consolidation counterfactuals with matched salience and controlled recognition</td>
+</tr>
+<tr>
+<td>F1</td>
+<td>One generator, common law and coupled processes treated as exclusive</td>
+<td>Restrict candidate state spaces, projections and parameter ties; block assembly alone has no explanatory content</td>
+<td>Independent blocks and delayed response both fit one generator</td>
+</tr>
+<tr>
+<td>F2</td>
+<td>DPI means every reduction strictly loses information / physical c-theorem</td>
+<td>Markov processing yields non-increase; identity/sufficient channels can preserve information</td>
+<td>Exact-cache and sufficient-reduction equality tests</td>
+</tr>
+<tr>
+<td>F3</td>
+<td>Historical scheduler changes called intervention</td>
+<td>Predeclare controlled mechanism tests and confounders; distinguish code-level tests from subject-level behavioral evidence</td>
+<td>Fixed histories/seeds, matched resource exposure, ablations, independent held-out trials</td>
+</tr>
+</tbody>
+</table>
+<h1 id="external-anchors-checked">External anchors checked<a class="headerlink" href="#external-anchors-checked" title="Permanent link">&para;</a></h1>
+<ul>
+<li><a href="https://arxiv.org/abs/1903.11544">Surya, causal-set review</a>: continuum
+  correspondence is a conditional research construction.</li>
+<li><a href="https://arxiv.org/abs/0811.1067">Jiang et al., combinatorial Hodge theory</a>:
+  exact/curl/harmonic decomposition supplies algebra, not personality semantics.</li>
+<li><a href="https://arxiv.org/abs/1808.01513">Hansen and Ghrist, cellular sheaves</a>:
+  cohomology and Laplacians must be distinguished from a current assignment.</li>
+<li><a href="https://arxiv.org/abs/1412.2690">Barnett and Crutchfield, ε-transducer</a>:
+  input–output processes supply a closer neighbor for controlled memory.</li>
+</ul>
+<p>These references anchor the imported mathematics. The finite counterexamples
+are independently reproducible in <code>cycle_revision_probes.py</code>.</p>
+<h1 id="order-of-work-and-completion-conditions">Order of work and completion conditions<a class="headerlink" href="#order-of-work-and-completion-conditions" title="Permanent link">&para;</a></h1>
+<ol>
+<li>Pin source baseline, reproduce counterexamples and record this matrix.</li>
+<li>Revise all six articles as a coordinated edition, with a common typed
+   contract and explicit provenance. Keep substantive ontology and useful
+   constructions; correct claims in place rather than append a contradictory
+   disclaimer to the old theorem.</li>
+<li>Write service specifications with migration and acceptance cases for each
+   implemented row. Defer only named research hypotheses, never silently ship
+   them as established facts.</li>
+<li>Implement mathematical/causal invariants first, then memory, affect and MCP
+   integration. Use isolated test vessels and WALs before touching live state.</li>
+<li>Replay historical fixtures, exercise service/MCP boundaries, verify signed
+   continuity and document measured outcomes in the papers/research ledger.</li>
+</ol>
+<h2 id="implemented-september-revision">Implemented September revision<a class="headerlink" href="#implemented-september-revision" title="Permanent link">&para;</a></h2>
+<p>All six maintained editions are prepared in the numbered cycle. Owning service
+contracts are Nymara <code>CYCLE-2026-09.md</code> (runtime 0.4) and Tyveth
+<code>docs/CYCLE-2026-09.md</code> (service 0.5). The contracts identify compatibility
+changes, source attribution, finite test obligations and deployment boundaries.</p>
+<p>Implemented rows include T1–T4 (verified half-open chain duration, rejection of
+incomparable/branching inputs and backward wall deltas); T5 (explicit declaration
+status, not invented coverage certification); C2 (weighted adjoints, Hodge and
+spectral agreement); M5 (external deadline delivery); M7–M8 (effective valuation,
+versioned normalized deposits, active replacements, causal-filter recall with
+refs); A2/A4/A5 (identifiable mood, labeled scalar gain/reachability and undefined
+ratios). Authored bounded retention provides a path independent of recognition.
+Structural election validates topology and recognition evidence. Deterministic
+causal replay removes filesystem-order dependence. Semantic edge keys replace
+numeric-index lineage keys; individual degenerate mode matching remains a
+labeled heuristic rather than an identity claim.</p>
+<p>The original weighted probe produced gradient/curl inner product 10.8889 and
+component energy sum 51.2222 for input energy 73. The repaired probe produces
+inner product 0 and component sum 72.99999999999999. Both result files are kept.</p>
+<p>The remaining mathematical rows are repaired in the papers with explicit
+constructions, assumptions and counterexamples. Controlled task sufficiency,
+independently audited causal completeness, an action-channel empowerment model,
+independent maintenance clock, physical erasure, cross-substrate behavioral
+identity and longitudinal superiority remain named research obligations. They
+are not represented as implemented capabilities of either service.</p>
+<p>Source-code verification and publication are separate from live rollout. No
+persona vessel, sealed key, deployment file or production WAL is an experiment
+fixture. Physalia and Tyveth had no remote at baseline; publishing destinations
+must be provided rather than invented.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.sections"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
